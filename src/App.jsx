@@ -1,4 +1,5 @@
 import Course from "./components/Course"
+import SumExercises from "./components/SumExercises"
 
 const App = () => {
 
@@ -20,6 +21,11 @@ const App = () => {
         name: 'State of a component',
         exercises: 14,
         id: 3
+      },
+      {
+        name: 'Redux',
+        exercises: 11,
+        id: 4
       }
     ]
   }
@@ -28,6 +34,7 @@ const App = () => {
     <main>
       <h1>{courses.name}</h1>
       <Course courses={courses} />
+      <SumExercises courses={courses} />
     </main>
   )
 }
