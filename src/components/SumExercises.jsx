@@ -1,7 +1,7 @@
 
-const SumCourses = ({courses}) => {
+const SumCourses = ({courses, position}) => {
 
-    const totalExercises = courses.parts.reduce((sum, part) => sum + part.exercises, 0)
+    const totalExercises = courses[position].parts.reduce((sum, part) => sum + part.exercises, 0)
 
   return (
     <div>
